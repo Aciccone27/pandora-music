@@ -11,10 +11,19 @@
     color:dimgrey;
   }
   .pandora-search{
-    width: 15%;
-    border: 2px solid;
-  border-radius: 10px;
-  height: 35%;
+    background-color:rgb(231, 227, 227);
+    width: 20%;
+    border: 2px none;
+    height: 45%;
+    border-radius: 15px;
+    
  
+  }
+  .pandora-icon
+  {
+    background-color:rgba(231, 227, 227, 0.979);
+    width: 40%;
+    border: 2px none;
+    height: 45%;
   }
   
