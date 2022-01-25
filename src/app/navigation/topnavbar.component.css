@@ -1,29 +1,68 @@
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:black
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color:black
+  }
+
 .pandora-one{
     color:dimgrey;
+    font-size: 18px;
+    
   }
+
+
+
   .pandora-two{
     color:dimgrey;
+    font-size: 18px;
   }
+
   .pandora-three{
     color:dimgrey;
+    font-size: 18px;
   }
+
   .pandora-brand{
     color:dimgrey;
+    font-size: 25px;
   }
+
   .pandora-search{
-    background-color:rgb(231, 227, 227);
+    background-color:rgba(247, 243, 243, 0.979);
     width: 20%;
     border: 2px none;
     height: 45%;
     border-radius: 15px;
     
- 
   }
+
   .pandora-icon
   {
-    background-color:rgba(231, 227, 227, 0.979);
+    background-color:rgba(247, 243, 243, 0.979);
     width: 40%;
     border: 2px none;
     height: 45%;
   }
+
+  .pandora-button
+  {
+    background-image: linear-gradient(to top right, rgb(67, 255, 183), rgb(4, 253, 220));
+    border-radius: 50px;
+    width: 105%;
+    height: 105%;
+  }
+
+  
   
