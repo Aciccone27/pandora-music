@@ -1,0 +1,82 @@
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:black
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color:black
+  }
+
+.pandora-one{
+    color:dimgrey;
+    font-size: 18px;
+    
+  }
+
+
+.bottom_icon
+{
+    width: 4%;
+    height: 4%;
+  }
+
+  .bottom_overflow
+  {
+    white-space: nowrap;
+    width: 650px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bottom_size
+  {
+    font-size: 15px;
+  }
+
+  .bottom_margin
+  {
+    margin-top: 15px;
+    
+  }
+
+  .bottom_vol
+  {
+    margin-top: 30px;
+    
+  }
+
+  .bottom_repeat
+  {
+    margin-right: 5%;
+  }
+
+  .bottom_back
+  {
+    margin-right: 5%;
+  }
+
+  .bottom_play
+  {
+    margin-right: 5%;
+  }
+
+  .bottom_forward
+  {
+    margin-right: 5%;
+  }
+
+  .bottom_shuffle
+  {
+    margin-right: 5%;
+  }
+
+  
