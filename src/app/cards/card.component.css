@@ -1,0 +1,51 @@
+.card_size
+{
+    width: 15%;
+    height:15%;
+}
+
+.card_center
+{
+    text-align: center;
+    margin-top: 25%;
+}
+
+.card_background
+{
+    background-color:transparent;
+    outline:transparent;
+}
+
+.card_border
+{
+    border-style: none;
+}
+
+.card:hover
+{
+    
+}
+
+.card_overflow
+  {
+    white-space: nowrap;
+    width: 275px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card_titlesize
+  {
+    font-size: 18px;
+  }
+
+  .card_thick 
+  {
+    font-weight: bold;
+  }
+
+  
+  .card_size
+  {
+    font-size: 10px;
+  }
