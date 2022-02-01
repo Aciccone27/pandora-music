@@ -5,13 +5,15 @@ import { TopNavBarComponent } from 'src/app/navigation/topnavbar.component';
 import { AppComponent } from './app.component';
 import { BottomNavBarComponent } from './bottom_Navigation/bottomnavbar.component';
 import { CardComponent } from './cards/card.component';
+import { SongListComponent } from './Lists/songlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
     CardComponent,
-    BottomNavBarComponent
+    BottomNavBarComponent,
+    SongListComponent
   ],
   imports: [
     BrowserModule

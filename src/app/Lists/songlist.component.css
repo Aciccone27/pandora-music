@@ -1,0 +1,30 @@
+.list_time
+{
+    color:rgb(0, 0, 0);
+    background-color:transparent;
+}
+
+.list_space
+{
+  width: 50%;
+  position: relative;
+  left: 900px;
+}
+
+.list_size
+{
+    width: 65%;
+    height:65%;
+}
+
+.list_header 
+{
+  border-style: none;
+    background-color: transparent;
+  }
+
+  .list_text
+  {
+      color:black;
+      font-weight: bold;
+  }
