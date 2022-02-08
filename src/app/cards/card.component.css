@@ -47,13 +47,18 @@
 
   .container {
     position:relative;
-    width: 50%;
+    width: 100%;
+    padding-right:0%;
+  padding-left: 0%;
+  margin-right:0%;
+  margin-left: 0%;
   }
 
   .image {
     opacity: 1;
     display: block;
-  
+    width: 20%;
+    height:20%;
     transition: .5s ease;
     backface-visibility: hidden;
   }

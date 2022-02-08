@@ -19,6 +19,9 @@
 .container {
     position:relative;
     width: 20%;
+
+    margin-right: 0%;
+    margin-left: 0%;
   }
 
 .image {
@@ -48,3 +51,4 @@
   .container:hover .middle {
     opacity: 3;
   }
+  
