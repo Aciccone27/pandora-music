@@ -1,23 +1,21 @@
 <pandora-topnavbar>Loading...</pandora-topnavbar>
 
 <!--cards for the different albums of music-->
-<div class="container-fluid ">
-    <pandora-card img="./assets/encanto.jpg" title="Encanto (Original Motion Picture Soundtrack)" artist="Lin-Manuel Miranda, Germaine Franco & Encanto - Cast" [songs]=44>
-        Loading...</pandora-card>
-    
-    <pandora-card img="./assets/meatloaf_thumbnail.jpg" title="Bat Out Of Hell" artist="Meatloaf" [songs]=6>
-        Loading...</pandora-card>
-    
-    <pandora-card img="./assets/momma_mia_thumbnail.jpg" title="Mamma Mia! Here We Go Again (Original Motion Picture Soundtrack)" artist="Cast Of Mamma Mia! Here We Go Again" [songs]=18>
-        Loading...</pandora-card>
-    
-    <pandora-card img="./assets/shum_goa_thumbnail.jpg" title="SHUM" artist="Go-A" [songs]=1>
-        Loading...</pandora-card>
+<div class="container-fluid">
+    <div *ngFor = "let album of albums">
+        <pandora-card class="mx-2" img={{album.img}} title = {{album.title}} artist={{album.artist}} [songs] ='album.songs'>
+            Loading...
+        </pandora-card>
+    </div>
 </div>
- 
+
 <!--cards for the artists-->
 <div class="container-fluid">
-    <pandora-artistcard>Loading...</pandora-artistcard>
+    <div *ngFor = "let artist of artists">
+        <pandora-artistcards class="mx-2" img = {{artist.img}} artist = {{artist.artist}}>
+            Loading...
+        </pandora-artistcards>
+    </div>
 </div>
 
 <pandora-songlist>Loading...</pandora-songlist>
