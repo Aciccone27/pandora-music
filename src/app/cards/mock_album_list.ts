@@ -1,4 +1,4 @@
-export const mock_album_cards = [
+export const mock_album_lists = [
     {
     img: "./assets/encanto.jpg",
     title: "Encanto (Original Motion Picture Soundtrack)",
