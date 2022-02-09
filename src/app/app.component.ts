@@ -9,6 +9,7 @@ import { mock_artist_list } from './Artists/mock_artist_list';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'pandora-music';
   albums: AlbumItemModel [] = [];
@@ -29,5 +30,6 @@ export class AppComponent {
     }
   }
 
-
+  
 }
+
