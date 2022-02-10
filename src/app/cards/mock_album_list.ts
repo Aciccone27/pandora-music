@@ -25,5 +25,19 @@ export const mock_album_lists = [
         title: "SHUM",
         artist: "Go-A",
         songs: 1
+    },
+
+    {
+        img: "./assets/marry_me_thumbnail.jpg",
+        title: "Marry Me (Original Motion Picture Soundtrack)",
+        artist: "Jennifer Lopez & Maluma",
+        songs: 13
+    },
+
+    {
+        img: "./assets/sing2_thumbnail.jpg",
+        title: "Sing 2 (Original Motion Picture Soundtrack)",
+        artist: "Various Artists",
+        songs: 17
     }
 ];

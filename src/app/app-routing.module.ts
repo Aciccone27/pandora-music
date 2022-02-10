@@ -9,6 +9,7 @@ import { SettingsLayoutComponent } from './navigation/settings-layout.component'
 import { HelpLayoutComponent } from './navigation/help-layout.component';
 import { CommunityLayoutComponent } from './navigation/community-layout.component';
 import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
+import { ArtistLayoutComponent } from './middle_navigation/artist-layout.component';
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -19,7 +20,8 @@ const routes:Routes = [
   {path: 'settings', component: SettingsLayoutComponent},
   {path: 'help', component: HelpLayoutComponent},
   {path: 'community', component: CommunityLayoutComponent},
-  {path: 'sign-out', component: SignOutLayoutComponent}
+  {path: 'sign-out', component: SignOutLayoutComponent},
+  {path: 'artist', component: ArtistLayoutComponent}
 ];
 
 

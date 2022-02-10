@@ -1,17 +1,17 @@
 import { Component } from "@angular/core";
 import { ArtistItemModel } from "../Artists/artists-item.model";
 import { mock_artist_list } from "../Artists/mock_artist_list";
-import { AlbumItemModel } from "./album-item.model";
-import { mock_album_lists } from "./mock_album_list";
+import { AlbumItemModel } from "../cards/album-item.model";
+import { mock_album_lists } from "../cards/mock_album_list";
 
 
 
 @Component({
-    selector: 'pandora-home',
-    templateUrl: 'home-layout.component.html',
-    styleUrls: ['home-layout.component.css']
+    selector: 'pandora-artist',
+    templateUrl: 'artist-layout.component.html',
+    styleUrls: ['artist-layout.component.css']
 })
-export class HomeLayoutComponent {
+export class ArtistLayoutComponent {
     albums: AlbumItemModel [] = [];
   artists: ArtistItemModel [] = [];
 

@@ -1,0 +1,15 @@
+.pandora-icon
+  {
+    background-color:rgba(247, 243, 243, 0.979);
+    width: 40%;
+    border: 2px none;
+    height: 45%;
+  }
+
+  .pandora-button
+  {
+    background-image: linear-gradient(to top right, rgb(67, 255, 183), rgb(4, 253, 220));
+    border-radius: 50px;
+    width: 105%;
+    height: 105%;
+  }

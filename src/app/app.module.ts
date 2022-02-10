@@ -17,6 +17,7 @@ import { HelpLayoutComponent } from './navigation/help-layout.component';
 import { CommunityLayoutComponent } from './navigation/community-layout.component';
 import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
 import { MiddleNavBarComponent } from './middle_navigation/middlenavbar.component';
+import { ArtistLayoutComponent } from './middle_navigation/artist-layout.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MiddleNavBarComponent } from './middle_navigation/middlenavbar.componen
     HelpLayoutComponent,
     CommunityLayoutComponent,
     SignOutLayoutComponent,
-    MiddleNavBarComponent
+    MiddleNavBarComponent,
+    ArtistLayoutComponent
   ],
   imports: [
     BrowserModule,

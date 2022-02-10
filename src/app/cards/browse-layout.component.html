@@ -10,12 +10,31 @@
                         Loading...
                     </pandora-artistcards>
                 </div>
-                <div class="col">
-                </div>
-                <div class="col">
-                </div>
+                
             </div>
         </div>
+        <div class="container">
+            <h1>New Music</h1>
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-2" *ngFor = "let album of albums">
+                            <pandora-card class="mx-2 card size image" img={{album.img}} title = {{album.title}} artist={{album.artist}} [songs] ='album.songs'>
+                                Loading...
+                            </pandora-card>
+                        </div>
+                        
+                        <h1>  </h1>
+<h1> l </h1>
+<h1>  </h1>
+<h1>  </h1>
+<h1>  </h1>
+<h1>  </h1>
+<h1>  </h1>
+<h1>  </h1>
+<h1>  l</h1>
+                    </div>
+                </div>
 
 
 
