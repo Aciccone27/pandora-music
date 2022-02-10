@@ -8,6 +8,7 @@ import { BottomNavBarComponent } from './bottom_Navigation/bottomnavbar.componen
 import { CardComponent } from './cards/card.component';
 import { SongListComponent } from './Lists/songlist.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowseLayoutComponent } from './cards/browse-layout.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     CardComponent,
     BottomNavBarComponent,
     SongListComponent,
-    ArtistCardsComponent
+    ArtistCardsComponent,
+    BrowseLayoutComponent
   ],
   imports: [
     BrowserModule,
