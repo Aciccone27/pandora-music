@@ -13,6 +13,9 @@ import { HomeLayoutComponent } from './cards/home-layout.component';
 import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component';
 import { ProfileLayoutComponent } from './navigation/profile-layout.component';
 import { SettingsLayoutComponent } from './navigation/settings-layout.component';
+import { HelpLayoutComponent } from './navigation/help-layout.component';
+import { CommunityLayoutComponent } from './navigation/community-layout.component';
+import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { SettingsLayoutComponent } from './navigation/settings-layout.component'
     HomeLayoutComponent,
     NowPlayingLayoutComponent,
     ProfileLayoutComponent,
-    SettingsLayoutComponent
+    SettingsLayoutComponent,
+    HelpLayoutComponent,
+    CommunityLayoutComponent,
+    SignOutLayoutComponent
   ],
   imports: [
     BrowserModule,
