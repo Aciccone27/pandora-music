@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowseLayoutComponent } from './cards/browse-layout.component';
 import { HomeLayoutComponent } from './cards/home-layout.component';
 import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component';
+import { ProfileLayoutComponent } from './navigation/profile-layout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component'
     ArtistCardsComponent,
     BrowseLayoutComponent,
     HomeLayoutComponent,
-    NowPlayingLayoutComponent
+    NowPlayingLayoutComponent,
+    ProfileLayoutComponent
   ],
   imports: [
     BrowserModule,
