@@ -5,13 +5,15 @@ import { BrowseLayoutComponent } from './cards/browse-layout.component';
 import { HomeLayoutComponent } from './cards/home-layout.component';
 import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component';
 import { ProfileLayoutComponent } from './navigation/profile-layout.component';
+import { SettingsLayoutComponent } from './navigation/settings-layout.component';
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
   {path: 'browse', component: BrowseLayoutComponent},
   {path: 'home', component: HomeLayoutComponent},
   {path: 'now-playing', component: NowPlayingLayoutComponent},
-  {path: 'profile', component: ProfileLayoutComponent}
+  {path: 'profile', component: ProfileLayoutComponent},
+  {path: 'settings', component: SettingsLayoutComponent}
 ];
 
 

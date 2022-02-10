@@ -12,6 +12,7 @@ import { BrowseLayoutComponent } from './cards/browse-layout.component';
 import { HomeLayoutComponent } from './cards/home-layout.component';
 import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component';
 import { ProfileLayoutComponent } from './navigation/profile-layout.component';
+import { SettingsLayoutComponent } from './navigation/settings-layout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProfileLayoutComponent } from './navigation/profile-layout.component';
     BrowseLayoutComponent,
     HomeLayoutComponent,
     NowPlayingLayoutComponent,
-    ProfileLayoutComponent
+    ProfileLayoutComponent,
+    SettingsLayoutComponent
   ],
   imports: [
     BrowserModule,
