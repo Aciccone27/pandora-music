@@ -16,6 +16,7 @@ import { SettingsLayoutComponent } from './navigation/settings-layout.component'
 import { HelpLayoutComponent } from './navigation/help-layout.component';
 import { CommunityLayoutComponent } from './navigation/community-layout.component';
 import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
+import { MiddleNavBarComponent } from './middle_navigation/middlenavbar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
     SettingsLayoutComponent,
     HelpLayoutComponent,
     CommunityLayoutComponent,
-    SignOutLayoutComponent
+    SignOutLayoutComponent,
+    MiddleNavBarComponent
   ],
   imports: [
     BrowserModule,

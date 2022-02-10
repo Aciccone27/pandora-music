@@ -1,1 +1,22 @@
-This is the browser 
+<!--cards for the artists-->
+
+<div class="container">
+    <h1>Artists Picked for you</h1>
+    <div class="row align-items-start">
+        <div class="col">
+            <div class="row">
+                <div class="col-3" *ngFor="let artist of artists">
+                    <pandora-artistcards class="mx-2" img={{artist.img}} artist={{artist.artist}}>
+                        Loading...
+                    </pandora-artistcards>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+
+
+
+        <pandora-bottomnavbar>Loading...</pandora-bottomnavbar>
