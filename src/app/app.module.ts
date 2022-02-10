@@ -9,6 +9,8 @@ import { CardComponent } from './cards/card.component';
 import { SongListComponent } from './Lists/songlist.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowseLayoutComponent } from './cards/browse-layout.component';
+import { HomeLayoutComponent } from './cards/home-layout.component';
+import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrowseLayoutComponent } from './cards/browse-layout.component';
     BottomNavBarComponent,
     SongListComponent,
     ArtistCardsComponent,
-    BrowseLayoutComponent
+    BrowseLayoutComponent,
+    HomeLayoutComponent,
+    NowPlayingLayoutComponent
   ],
   imports: [
     BrowserModule,

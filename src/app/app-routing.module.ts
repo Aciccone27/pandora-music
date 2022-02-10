@@ -2,9 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule,Routes } from '@angular/router';
 import { BrowseLayoutComponent } from './cards/browse-layout.component';
+import { HomeLayoutComponent } from './cards/home-layout.component';
+import { NowPlayingLayoutComponent } from './Lists/now-playing-layout.component';
 
 const routes:Routes = [
-  {path: 'browse', component: BrowseLayoutComponent}
+  {path: '', component: HomeLayoutComponent},
+  {path: 'browse', component: BrowseLayoutComponent},
+  {path: 'home', component: HomeLayoutComponent},
+  {path: 'now-playing', component: NowPlayingLayoutComponent}
 ];
 
 

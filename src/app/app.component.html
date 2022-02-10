@@ -2,23 +2,6 @@
 
 <router-outlet></router-outlet>
 
-<!--cards for the different albums of music-->
-<div class="container-fluid">
-    <div *ngFor = "let album of albums">
-        <pandora-card class="mx-2" img={{album.img}} title = {{album.title}} artist={{album.artist}} [songs] ='album.songs'>
-            Loading...
-        </pandora-card>
-    </div>
-</div>
 
-<!--cards for the artists-->
-<div class="container-fluid">
-    <div *ngFor = "let artist of artists">
-        <pandora-artistcards class="mx-2" img = {{artist.img}} artist = {{artist.artist}}>
-            Loading...
-        </pandora-artistcards>
-    </div>
-</div>
 
-<pandora-songlist>Loading...</pandora-songlist>
 <pandora-bottomnavbar>Loading...</pandora-bottomnavbar>
