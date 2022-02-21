@@ -1,10 +1,16 @@
-this is the song lists
 
-<li class="list-group-item d-flex justify-content-between align-items-start">
-    {{img}}
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">{{title}}</div>
-      {{artist}}
+<div class="d-flex flex-nowrap">
+    <div class="container-fluid" *ngFor="let carol of carol">
+    <pandora-carol class="mx-2" img = {{carol.img}}>loading...</pandora-carol>
     </div>
-    <span class="badge  list_time">{{number}}</span>
-  </li>
+    </div>
+
+
+<pandora-middlenavbar>loading...</pandora-middlenavbar>
+
+<div class="col" *ngFor="let slist of slist">
+    <pandora-slist class="mx-2" img={{slist.img}} title={{slist.title}} artist={{slist.artist}} number={{slist.number}}>
+        Loading...</pandora-slist>
+</div>
+
+<pandora-bottomnavbar>loading...</pandora-bottomnavbar>

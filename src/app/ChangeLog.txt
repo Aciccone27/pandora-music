@@ -11,17 +11,31 @@
             -->song route
                     *mock_song_route_list.ts
                     *song-route-item.model.ts
-
-
-
-
-
-
-
-
-
-
-
+    *created the following attributes for the ngfor loop 
+            -->album
+                    *img (image)
+                    *title
+                    *artists
+                    *songs
+                    *explicit
+            -->song
+                    *img
+                    *title
+                    *artists
+                    *number
+     *created carosel componet to go on multiple pages
+              -->album-carol.component.html/css/ts
+      * created components
+             -->album
+                    *cards and information about albums
+                    *middle navigation bar
+                    *bottom navigation bar
+                    *carosel start
+             -->songs
+                    *list of songs
+                    *middle navigation bar
+                    *bottom navigation bar
+                    *carosel start
 
 
 **Bonus**

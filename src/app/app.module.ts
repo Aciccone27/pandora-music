@@ -22,6 +22,9 @@ import { SongIconComponent } from './Lists/song-icon.component';
 import { SongTitleComponent } from './Lists/song-title.component';
 import { AlbumRouteComponent } from './album_route/album-route.component';
 import { SongRouteComponent } from './song_route/song-route.component';
+import { SlistComponent } from './song_route/s_list.component';
+import { CarolComponent } from './cards/album-carol.component';
+import { AlistComponent } from './album_route/a_list.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { SongRouteComponent } from './song_route/song-route.component';
     SongIconComponent,
     SongTitleComponent,
     AlbumRouteComponent,
-    SongRouteComponent
+    SongRouteComponent,
+    SlistComponent,
+    CarolComponent,
+    AlistComponent
   ],
   imports: [
     BrowserModule,

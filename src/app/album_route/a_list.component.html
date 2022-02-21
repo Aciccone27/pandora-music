@@ -1,18 +1,15 @@
-
-
-  <div class="container ">
-    <img src= "{{img}}" alt="..." class="image card_size" >
+<div class="container ">
+    <img src= {{img}} alt="..." class="image " >
     <div class="middle  ">
-
-
       <div class="text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
       </svg></div>
       <div class="text">...</div>
     </div>
     <ul class="list-group ">
-      <li class="list-group-item card_border card_overflow card_titlesize card_thick">{{title}}</li>
-      <li class="list-group-item card_border card_overflow card_size">{{artist}}</li>
-      <li class="list-group-item card_border card_overflow card_size">Album - {{songs}} songs</li>
+      <li class="list-group-item  ">{{title}}</li>
+      <li class="list-group-item  ">{{artist}}</li>
+      <li class="list-group-item  ">Album - {{songs}} songs</li>
+      {{explicit}}
       </ul>
   </div>

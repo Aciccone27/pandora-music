@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 import { mock_song_lists } from "./mock_song_list";
 import { SongListItemModel } from "./song-list-item.model";
 

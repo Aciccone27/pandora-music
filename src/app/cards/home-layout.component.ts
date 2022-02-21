@@ -2,7 +2,9 @@ import { Component } from "@angular/core";
 import { ArtistItemModel } from "../Artists/artists-item.model";
 import { mock_artist_list } from "../Artists/mock_artist_list";
 import { AlbumItemModel } from "./album-item.model";
+import { CarolItemModel } from "./carol-item.model";
 import { mock_album_lists } from "./mock_album_list";
+import { mock_carol_list } from "./mock_carol_list";
 
 
 
@@ -14,6 +16,7 @@ import { mock_album_lists } from "./mock_album_list";
 export class HomeLayoutComponent {
     albums: AlbumItemModel [] = [];
   artists: ArtistItemModel [] = [];
+  carol: CarolItemModel [] =[];
 
   constructor(){
 
@@ -27,6 +30,12 @@ export class HomeLayoutComponent {
     for (var artist of mock_artist_list){
       console.log(artist);
       this.artists.push(artist);
+    }
+
+    //for carol
+    for (var carol of mock_carol_list){
+      console.log(carol);
+      this.carol.push(carol);
     }
   }
 }

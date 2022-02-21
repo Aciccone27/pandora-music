@@ -1,1 +1,17 @@
-This is the album lists
+<div class="d-flex flex-nowrap">
+    <div class="container-fluid" *ngFor="let carol of carol">
+    <pandora-carol class="mx-2" img = {{carol.img}}>loading...</pandora-carol>
+    </div>
+    </div>
+
+
+<pandora-middlenavbar>loading...</pandora-middlenavbar>
+
+<div class="col" *ngFor="let alist of alist">
+    <pandora-alist class="mx-2" img={{alist.img}} title={{alist.title}} artist={{alist.artist}} 
+    explicit ={{alist.explicit}}>
+        Loading...</pandora-alist>
+</div>
+
+<pandora-bottomnavbar>loading...</pandora-bottomnavbar>
+
