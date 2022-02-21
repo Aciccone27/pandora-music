@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'pandora-songroute',
@@ -6,5 +6,15 @@ import { Component } from "@angular/core";
     styleUrls: ['song-route.component.css']
 })
 export class SongRouteComponent{
-    
+    @Input() img: string;
+    @Input() title: string;
+    @Input() artist: string;
+    @Input() number: number;
+
+    constructor (){
+        this.img = "";
+        this.artist = "";
+        this.title ="";
+        this.number = 0;
+    }
 }
