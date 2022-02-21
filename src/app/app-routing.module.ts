@@ -10,6 +10,8 @@ import { HelpLayoutComponent } from './navigation/help-layout.component';
 import { CommunityLayoutComponent } from './navigation/community-layout.component';
 import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
 import { ArtistLayoutComponent } from './middle_navigation/artist-layout.component';
+import { AlbumRouteComponent } from './album_route/album-route.component';
+import { SongRouteComponent } from './song_route/song-route.component';
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -21,7 +23,9 @@ const routes:Routes = [
   {path: 'help', component: HelpLayoutComponent},
   {path: 'community', component: CommunityLayoutComponent},
   {path: 'sign-out', component: SignOutLayoutComponent},
-  {path: 'artist', component: ArtistLayoutComponent}
+  {path: 'artist', component: ArtistLayoutComponent},
+  {path: 'albums', component: AlbumRouteComponent},
+  {path: 'songs', component: SongRouteComponent}
 ];
 
 

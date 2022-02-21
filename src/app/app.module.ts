@@ -20,6 +20,8 @@ import { MiddleNavBarComponent } from './middle_navigation/middlenavbar.componen
 import { ArtistLayoutComponent } from './middle_navigation/artist-layout.component';
 import { SongIconComponent } from './Lists/song-icon.component';
 import { SongTitleComponent } from './Lists/song-title.component';
+import { AlbumRouteComponent } from './album_route/album-route.component';
+import { SongRouteComponent } from './song_route/song-route.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { SongTitleComponent } from './Lists/song-title.component';
     MiddleNavBarComponent,
     ArtistLayoutComponent,
     SongIconComponent,
-    SongTitleComponent
+    SongTitleComponent,
+    AlbumRouteComponent,
+    SongRouteComponent
   ],
   imports: [
     BrowserModule,

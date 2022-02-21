@@ -1,8 +1,38 @@
-Changes made for Lab assignment #5
+**Changes made for Lab assignment #5**
+    *created two folders to create new routing
+            -->album_route
+                    *album-route.component.html/css/ts
+            -->song_route
+                    *song-route.component.html/css/ts
+    *created mock lists and item models for both components
+            -->album route
+                    *mock_album_route_list.ts
+                    *album-route-item.model.ts
+            -->song route
+                    *mock_song_route_list.ts
+                    *song-route-item.model.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Bonus**
     In List folder
+        *created new files to hold the song icon and song title(really album cover and album title)
+            -->song-title.component.html/css/ts
+            -->song-icon.component.html/css/ts
         *created a mock song list (mock_song_list.ts)
         * created item model for song lists (song-list-item.model.ts)
         * 3 attributes for each song:
-                --> song (title)
-                --> artists
-                --> time (how long the song is)
+            --> song (title)
+            --> artists
+            --> time (how long the song is)
+            --> number (position on the album)
