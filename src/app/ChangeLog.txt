@@ -1,0 +1,8 @@
+Changes made for Lab assignment #5
+    In List folder
+        *created a mock song list (mock_song_list.ts)
+        * created item model for song lists (song-list-item.model.ts)
+        * 3 attributes for each song:
+                --> song (title)
+                --> artists
+                --> time (how long the song is)

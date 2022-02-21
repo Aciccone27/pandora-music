@@ -3,8 +3,9 @@
     <div class="row align-items-start">
         <div class="col">
             <div class="row">
-                <div class="col-2" *ngFor = "let album of albums">
-                    <pandora-card class="mx-2 card size" img={{album.img}} title = {{album.title}} artist={{album.artist}} [songs] ='album.songs'>
+                <div class="col-2" *ngFor="let album of albums">
+                    <pandora-card class="mx-2 card size" img={{album.img}} title={{album.title}} artist={{album.artist}}
+                        [songs]='album.songs'>
                         Loading...
                     </pandora-card>
                 </div>
@@ -14,6 +15,9 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
 <pandora-middlenavbar>loading...</pandora-middlenavbar>
 
 
@@ -23,8 +27,9 @@
     <div class="row align-items-start">
         <div class="col">
             <div class="row">
-                <div class="col" *ngFor = "let album of albums">
-                    <pandora-card class="mx-2 card size" img={{album.img}} title = {{album.title}} artist={{album.artist}} [songs] ='album.songs'>
+                <div class="col" *ngFor="let album of albums">
+                    <pandora-card class="mx-2 card size" img={{album.img}} title={{album.title}} artist={{album.artist}}
+                        [songs]='album.songs'>
                         Loading...
                     </pandora-card>
                 </div>
@@ -35,14 +40,14 @@
             </div>
         </div>
 
-<!--cards for the artists-->
-<div class="container-fluid">
-    <div *ngFor = "let artist of artists">
-        <pandora-artistcards class="mx-2" img = {{artist.img}} artist = {{artist.artist}}>
-            Loading...
-        </pandora-artistcards>
-    </div>
-</div>
-<pandora-songlist>Loading...</pandora-songlist>
+        <!--cards for the artists-->
+        <div class="container-fluid">
+            <div *ngFor="let artist of artists">
+                <pandora-artistcards class="mx-2" img={{artist.img}} artist={{artist.artist}}>
+                    Loading...
+                </pandora-artistcards>
+            </div>
+        </div>
+        
 
-<pandora-bottomnavbar>Loading...</pandora-bottomnavbar>
+        <pandora-bottomnavbar>Loading...</pandora-bottomnavbar>

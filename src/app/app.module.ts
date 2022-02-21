@@ -18,6 +18,8 @@ import { CommunityLayoutComponent } from './navigation/community-layout.componen
 import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
 import { MiddleNavBarComponent } from './middle_navigation/middlenavbar.component';
 import { ArtistLayoutComponent } from './middle_navigation/artist-layout.component';
+import { SongIconComponent } from './Lists/song-icon.component';
+import { SongTitleComponent } from './Lists/song-title.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ArtistLayoutComponent } from './middle_navigation/artist-layout.compone
     CommunityLayoutComponent,
     SignOutLayoutComponent,
     MiddleNavBarComponent,
-    ArtistLayoutComponent
+    ArtistLayoutComponent,
+    SongIconComponent,
+    SongTitleComponent
   ],
   imports: [
     BrowserModule,

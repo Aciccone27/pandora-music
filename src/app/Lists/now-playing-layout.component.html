@@ -1,2 +1,15 @@
-This is the now playing
-<pandora-songlist>Loading...</pandora-songlist>
+<div class="d-flex justify-content-around">
+    <div class="mr-auto p-2">
+        <div class="d-flex flex-row">
+            <pandora-songicon>Loading...</pandora-songicon>
+
+            <div class="d-flex p-2 flex-column">
+                <pandora-songtitle>Loading...</pandora-songtitle>
+                <div class="col" *ngFor="let song of song">
+                    <pandora-songlist class="mx-2 " [number]='song.number' song={{song.songs}} artist={{song.artist}}
+                        time={{song.time}}>Loading...</pandora-songlist>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
