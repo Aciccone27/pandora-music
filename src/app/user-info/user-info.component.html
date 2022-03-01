@@ -1,0 +1,16 @@
+<p *ngIf="myInfo == undefined">Failed fetching user data</p>
+
+<div *ngIf="myInfo != undefined" class="container-fluid bg-success">
+    
+    <div class="row">
+        <div class="d-flex justify-content-around">
+        <div class="col-3 color">
+            User: {{myInfo.FirstName}} {{myInfo.LastName}}
+        </div>
+        <div class="col-6">
+            <a href={{myInfo.GitHub}}> GitHub: {{myInfo.GitHub}}</a>
+        </div>
+        <div class="col-3 color"> email: {{myInfo.mix_id}}@mix.wvu.edu</div>
+    </div>
+</div>
+</div>

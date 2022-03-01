@@ -1,3 +1,24 @@
+**Changes made for Lab Assignment #6 (Due 03/01/2022)**
+        *Main Features:
+                *Created new folder to hold new component
+                        -->user-info
+                *Created the following files inside of the user-info folder
+                        -->user-info.component.css/.html/.ts
+                        -->user-info.model.ts
+                *attributes listed in the mock model for user-info:
+                        -->FirstName
+                        -->LastName
+                        -->GitHub
+                        -->mix_id
+                *Not done in visual studio
+                        -->created backend withfirebase
+                        -->created realtime database and populated it with information
+        *Bonus:
+                 *Changed the favicon.ico to the favicon of pandora
+
+
+
+
 **Changes made for Lab assignment #5**
     *created two folders to create new routing
             -->album_route
@@ -37,8 +58,7 @@
                     *bottom navigation bar
                     *carosel start
 
-
-**Bonus**
+        **Bonus**
     In List folder
         *created new files to hold the song icon and song title(really album cover and album title)
             -->song-title.component.html/css/ts
@@ -50,3 +70,5 @@
             --> artists
             --> time (how long the song is)
             --> number (position on the album)
+
+

@@ -25,6 +25,10 @@ import { SongRouteComponent } from './song_route/song-route.component';
 import { SlistComponent } from './song_route/s_list.component';
 import { CarolComponent } from './cards/album-carol.component';
 import { AlistComponent } from './album_route/a_list.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { HttpClientModule } from '@angular/common/http'
+
+
 
 @NgModule({
   declarations: [
@@ -50,11 +54,13 @@ import { AlistComponent } from './album_route/a_list.component';
     SongRouteComponent,
     SlistComponent,
     CarolComponent,
-    AlistComponent
+    AlistComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
