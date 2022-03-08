@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "pandora-music-4d9c8"
+  },
+  "targets": {
+    "pandora-music-4d9c8": {
+      "hosting": {
+        "pandora-music": [
+          "pandora-music-4d9c8"
+        ]
+      }
+    }
+  }
+}
