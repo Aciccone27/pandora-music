@@ -7,7 +7,12 @@
                         --> Album List from Cards folder (file mock_album_lists)
                         --> Artist List from Artists folder (file mock_artist_list)
                         --> Album Route List from album_route folder (file mock_album_route_list)
-                
+                *Created the following service files
+                        -->songlist.service.ts (Lists folder)
+                        -->song_route.service.ts (song_route folder)
+                *added the OnInit methods and removed approriate for loops for the following files
+                        -->now-playing-layout.component.ts(Lists folder)
+                        -->song-route.components.ts (song_route folder)
 
 
 
