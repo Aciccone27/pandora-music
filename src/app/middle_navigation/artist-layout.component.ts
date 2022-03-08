@@ -1,8 +1,8 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { ArtistListService } from "../Artists/artist.service";
 import { ArtistItemModel } from "../Artists/artists-item.model";
-import { mock_artist_list } from "../Artists/mock_artist_list";
 import { AlbumItemModel } from "../cards/album-item.model";
-import { mock_album_lists } from "../cards/mock_album_list";
+import { AlbumListService } from "../cards/albums.service";
 
 
 
@@ -11,22 +11,28 @@ import { mock_album_lists } from "../cards/mock_album_list";
     templateUrl: 'artist-layout.component.html',
     styleUrls: ['artist-layout.component.css']
 })
-export class ArtistLayoutComponent {
+export class ArtistLayoutComponent implements OnInit{
     albums: AlbumItemModel [] = [];
   artists: ArtistItemModel [] = [];
 
-  constructor(){
+  constructor( private albumListService: AlbumListService, private artistListService: ArtistListService){
 
-    //for album covers
-    for (var album of mock_album_lists){
-      console.log(album);
-      this.albums.push(album);
-    }
-
-    //for artists
-    for (var artist of mock_artist_list){
-      console.log(artist);
-      this.artists.push(artist);
-    }
   }
+  ngOnInit(): void {
+    //for album covers
+   this.albumListService.getAlbums().subscribe((data: AlbumItemModel []) => {
+     console.log("Fetching song list data");
+     for (var albums of data) {
+       this.albums.push(albums);
+     }
+   })
+
+   //for artists
+   this.artistListService.getArtists().subscribe((data: ArtistItemModel []) => {
+    console.log("Fetching song list data");
+    for (var artists of data) {
+      this.artists.push(artists);
+    }
+  })
+}
 }

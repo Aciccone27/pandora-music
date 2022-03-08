@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { ArtistListService } from "../Artists/artist.service";
 import { ArtistItemModel } from "../Artists/artists-item.model";
-import { mock_artist_list } from "../Artists/mock_artist_list";
 import { AlbumItemModel } from "./album-item.model";
 import { AlbumListService } from "./albums.service";
 import { CarolItemModel } from "./carol-item.model";
@@ -19,17 +19,9 @@ export class HomeLayoutComponent implements OnInit {
   artists: ArtistItemModel [] = [];
   carol: CarolItemModel [] =[];
 
-  constructor(private carolListService: CarolListService, private albumListService: AlbumListService){
+  constructor(private carolListService: CarolListService, private albumListService: AlbumListService, private artistListService: ArtistListService){
 
-    
-
-    //for artists
-    for (var artist of mock_artist_list){
-      console.log(artist);
-      this.artists.push(artist);
-    }
-
-  
+   
   }
   
    ngOnInit(): void {
@@ -46,6 +38,14 @@ export class HomeLayoutComponent implements OnInit {
       console.log("Fetching song list data");
       for (var carol of data) {
         this.carol.push(carol);
+      }
+    })
+
+    //for artists
+    this.artistListService.getArtists().subscribe((data: ArtistItemModel []) => {
+      console.log("Fetching song list data");
+      for (var artists of data) {
+        this.artists.push(artists);
       }
     })
   }

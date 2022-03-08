@@ -1,22 +1,35 @@
 **Changes made for Lab Assignment #7 (Due 03/08/2022)**
         *Main Fetures:
-                *Transfered the information from the following mock lists into firebase
-                        --> Song List from folder Lists (file mock_song_list.ts)
-                        --> Song Route List from folder song_route (file mock_song_route_list.ts)
-                        --> Carol List from Cards folder (file mock_carol_list)
-                        --> Album List from Cards folder (file mock_album_lists)
-                        --> Artist List from Artists folder (file mock_artist_list)
-                        --> Album Route List from album_route folder (file mock_album_route_list)
-                *Created the following service files
+                *Transfered the information from the following mock list into firebase
+                        --> Song List from folder Lists (file mock_song_list.ts/firebase songslist)
+                        
+                *Created the following service file
                         -->songlist.service.ts (Lists folder)
+                        
+                *added the OnInit methods and removed approriate ngfor loops and mock imports for the following file:
+                        -->song-route.components.ts (song_route folder)
+                       
+        *Bonus
+                *Transfered the information from the following mock lists into firebase
+                        --> Song Route List from folder song_route (file mock_song_route_list.ts/firebase songroutelist)
+                        --> Carol List from Cards folder (file mock_carol_list/firebase carollist)
+                        --> Album List from Cards folder (file mock_album_lists/firebase albumlist)
+                        --> Artist List from Artists folder (file mock_artist_list/firebase artistlist)
+                        --> Album Route List from album_route folder (file mock_album_route_list/firebase albumroutelist)
+
+                *Created the following service files
                         -->song_route.service.ts (song_route folder)
                         -->carol.service.ts (cards folder)
                         -->albums.service.ts (cards folder)
-                *added the OnInit methods and removed approriate for loops for the following files
+                        -->artist.service.ts (artist folder)
+                        -->album_route.service.ts (album_route folder)
+
+                *added the OnInit methods and removed approriate ngfor loops and mock imports for the following files:
                         -->now-playing-layout.component.ts(Lists folder)
-                        -->song-route.components.ts (song_route folder)
                         -->home-layout.component.ts (cards folder)
                         -->browse-layout.component.ts (cards folder)
+                        -->album-route.componets.ts (album_route folder)
+                        -->artist-layout.component.ts (middle navigation folder)
 
 
 
