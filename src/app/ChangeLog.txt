@@ -1,3 +1,17 @@
+**Changes made for Lab Assignment #7 (Due 03/08/2022)**
+        *Main Fetures:
+                *Transfered the information from the following mock lists into firebase
+                        --> Song List from folder Lists (file mock_song_list.ts)
+                        --> Song Route List from folder song_route (file mock_song_route_list.ts)
+                        --> Carol List from Cards folder (file mock_carol_list)
+                        --> Album List from Cards folder (file mock_album_lists)
+                        --> Artist List from Artists folder (file mock_artist_list)
+                        --> Album Route List from album_route folder (file mock_album_route_list)
+                
+
+
+
+
 **Changes made for Lab Assignment #6 (Due 03/01/2022)**
         *Main Features:
                 *Created new folder to hold new component

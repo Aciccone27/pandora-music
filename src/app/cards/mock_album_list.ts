@@ -15,8 +15,8 @@ export const mock_album_lists = [
 
     {
         img: "./assets/momma_mia_thumbnail.jpg",
-        title: "Mamma Mia! Here We Go Again (Original Motion Picture Soundtrack)",
-        artist: "Cast Of Mamma Mia! Here We Go Again",
+        title: "Momma Mia! Here We Go Again (Original Motion Picture Soundtrack)",
+        artist: "Cast Of Momma Mia! Here We Go Again",
         songs: 18
     },
     
