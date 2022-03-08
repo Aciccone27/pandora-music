@@ -1,12 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 import { AlbumItemModel } from "../cards/album-item.model";
+import { AlbumListService } from "../cards/albums.service";
 import { CarolItemModel } from "../cards/carol-item.model";
-import { mock_album_lists } from "../cards/mock_album_list";
-import { mock_carol_list } from "../cards/mock_carol_list";
-import { SongListItemModel } from "../Lists/song-list-item.model";
-import { mock_song_route_list } from "./mock_song_route_list";
+import { CarolListService } from "../cards/carol.service";
+//import { SongListItemModel } from "../Lists/song-list-item.model";
 import { SongRouteListItemModel } from "./song-route-item.model";
 import { SongRouteListService } from "./song_route.service";
+
 
 @Component({
   selector: 'pandora-songroute',
@@ -18,25 +18,31 @@ export class SongRouteComponent implements OnInit {
   slist: SongRouteListItemModel[] = [];
   carol: CarolItemModel [] = [];
 
-  constructor(private songRouteListService:SongRouteListService) {
-    //for album covers in carosel
-    for (var album of mock_album_lists){
-      console.log(album);
-      this.albums.push(album);
-    }
-
-
-     //for carol
-     for (var carol of mock_carol_list){
-      console.log(carol);
-      this.carol.push(carol);
-    }
+  constructor(private songRouteListService:SongRouteListService, private carolListService: CarolListService, private albumListService: AlbumListService) {
+   
   }
   ngOnInit(): void {
+    //song route list
     this.songRouteListService.getSongsRoute().subscribe((data: SongRouteListItemModel []) => {
       console.log("Fetching song list data");
       for (var slist of data) {
         this.slist.push(slist);
+      }
+    })
+
+    //for album covers
+    this.albumListService.getAlbums().subscribe((data: AlbumItemModel []) => {
+      console.log("Fetching song list data");
+      for (var albums of data) {
+        this.albums.push(albums);
+      }
+    })
+
+     //for carol
+     this.carolListService.getCarols().subscribe((data: CarolItemModel []) => {
+      console.log("Fetching song list data");
+      for (var carol of data) {
+        this.carol.push(carol);
       }
     })
   }

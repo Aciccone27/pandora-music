@@ -1,10 +1,11 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { ArtistItemModel } from "../Artists/artists-item.model";
 import { mock_artist_list } from "../Artists/mock_artist_list";
 import { AlbumItemModel } from "./album-item.model";
+import { AlbumListService } from "./albums.service";
 import { CarolItemModel } from "./carol-item.model";
-import { mock_album_lists } from "./mock_album_list";
-import { mock_carol_list } from "./mock_carol_list";
+import { CarolListService } from "./carol.service";
+
 
 
 
@@ -13,18 +14,14 @@ import { mock_carol_list } from "./mock_carol_list";
     templateUrl: 'home-layout.component.html',
     styleUrls: ['home-layout.component.css']
 })
-export class HomeLayoutComponent {
+export class HomeLayoutComponent implements OnInit {
     albums: AlbumItemModel [] = [];
   artists: ArtistItemModel [] = [];
   carol: CarolItemModel [] =[];
 
-  constructor(){
+  constructor(private carolListService: CarolListService, private albumListService: AlbumListService){
 
-    //for album covers
-    for (var album of mock_album_lists){
-      console.log(album);
-      this.albums.push(album);
-    }
+    
 
     //for artists
     for (var artist of mock_artist_list){
@@ -32,10 +29,26 @@ export class HomeLayoutComponent {
       this.artists.push(artist);
     }
 
-    //for carol
-    for (var carol of mock_carol_list){
-      console.log(carol);
-      this.carol.push(carol);
-    }
+  
   }
+  
+   ngOnInit(): void {
+     //for album covers
+    this.albumListService.getAlbums().subscribe((data: AlbumItemModel []) => {
+      console.log("Fetching song list data");
+      for (var albums of data) {
+        this.albums.push(albums);
+      }
+    })
+
+    //for carol
+    this.carolListService.getCarols().subscribe((data: CarolItemModel []) => {
+      console.log("Fetching song list data");
+      for (var carol of data) {
+        this.carol.push(carol);
+      }
+    })
+  }
+
+
 }

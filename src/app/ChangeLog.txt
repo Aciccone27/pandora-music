@@ -10,9 +10,13 @@
                 *Created the following service files
                         -->songlist.service.ts (Lists folder)
                         -->song_route.service.ts (song_route folder)
+                        -->carol.service.ts (cards folder)
+                        -->albums.service.ts (cards folder)
                 *added the OnInit methods and removed approriate for loops for the following files
                         -->now-playing-layout.component.ts(Lists folder)
                         -->song-route.components.ts (song_route folder)
+                        -->home-layout.component.ts (cards folder)
+                        -->browse-layout.component.ts (cards folder)
 
 
 
