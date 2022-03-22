@@ -10,6 +10,7 @@
                    and removed all HTTP Client references within the file so that is is no longer utilized for the following file:
                         --> carol.service.ts (cards folder)
                 *deployed web applicaiton with unique URL
+                *Changed firebase.json to fix issue occuring when running ng build
         
         *Bonus:
                 *Connected the firebase library and removed the HTTP Client in the following service files:
