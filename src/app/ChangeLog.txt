@@ -1,12 +1,15 @@
 **Changes made for Lab Assignment #8 (Due 03/22/22)**
         *Main Features:
+                *configured firebase library
                 *copyied and pasted code from firebase to both files in the enviroment folder (enviroment.prod.ts and enviroment.ts) to connect code to 
                    app being created and to the angular fire library
                 *increased the budget in angular.json file to relieve the error recieved
                 *imported both angular fire modules (AngularFireModule and AngularFirestoreModule) in the app.component.ts file 
                    with the appropriate imports at the top as well
-                *connected the angular firebase to carol.service.ts (cards folder) so that the library is utilized that way 
-                   and removed all HTTP Client references within the file so that is is no longer utilized.
+                *connected the angular firebase so that the library is utilized that way 
+                   and removed all HTTP Client references within the file so that is is no longer utilized for the following file:
+                        --> carol.service.ts (cards folder)
+                *deployed web applicaiton with unique URL
         
         *Bonus:
                 *Connected the firebase library and removed the HTTP Client in the following service files:
