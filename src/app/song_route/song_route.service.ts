@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+
 import { Injectable } from "@angular/core";
 import {  SongRouteListItemModel } from "./song-route-item.model";
 import { AngularFireDatabase } from '@angular/fire/compat/database';
@@ -14,7 +14,7 @@ export class SongRouteListService{
 
     }
     public getSongsRoute(){
-        return this.db.list<SongRouteListItemModel>("songs").valueChanges();
+        return this.db.list<SongRouteListItemModel>("songsroutelist").valueChanges();
     }
 
     public getSongRoute(index:number){

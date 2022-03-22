@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { Injectable } from "@angular/core";
 import { CarolItemModel } from "./carol-item.model";
 
@@ -9,14 +9,14 @@ export class CarolListService{
     private baseUrl:string = "https://pandora-music-4d9c8-default-rtdb.firebaseio.com/";
     private songEndpoint: string = "carollist.json";
 
-    constructor(private http:HttpClient){
+    constructor(private db: AngularFireDatabase){
 
     }
     public getCarols(){
-        return this.http.get<CarolItemModel []>(this.baseUrl + this.songEndpoint);
+        return this.db.list<CarolItemModel>("carollist").valueChanges();
     }
 
     public getCarol(index:number){
-        return this.http.get<CarolItemModel>(this.baseUrl + 'songs' + '/' + index + '.json');
+        
     }
 }

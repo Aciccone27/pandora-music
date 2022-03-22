@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { Injectable } from "@angular/core";
 import { AlbumRouteItemModel } from "./album-route-item.model";
 
@@ -9,14 +9,14 @@ export class AlbumRouteListService{
     private baseUrl:string = "https://pandora-music-4d9c8-default-rtdb.firebaseio.com/";
     private songEndpoint: string = "albumroutelist.json";
 
-    constructor(private http:HttpClient){
+    constructor(private db: AngularFireDatabase){
 
     }
     public getAlbumroutes(){
-        return this.http.get<AlbumRouteItemModel []>(this.baseUrl + this.songEndpoint);
+        return this.db.list<AlbumRouteItemModel>("albumroutelist").valueChanges();
     }
 
     public getAlbumroute(index:number){
-        return this.http.get<AlbumRouteItemModel>(this.baseUrl + 'songs' + '/' + index + '.json');
+      
     }
 }
