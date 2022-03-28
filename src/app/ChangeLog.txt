@@ -1,3 +1,19 @@
+**Changes made for Lab Assignmet #9 (Due 03/29/22)**
+        *Main Features
+                *created new component to be able to insert new data into the website (addsongroute folder in the song_route folder)
+                *added routeing for the adsongroute in the app-routing.module.ts file (route path is admin)
+                *added to the html file (addsongroute.component.html) to include the following
+                        --> image (img)
+                        --> artist
+                        --> time (number) 
+                        --> title
+                        --> add album button
+                *added method to addsongroute.component.ts 
+                *added ng model name for each of the attributes listed above in the addsongroute.component.html file
+        *Bonus
+
+
+
 **Changes made for Lab Assignment #8 (Due 03/22/22)**
         *Main Features:
                 *configured firebase library

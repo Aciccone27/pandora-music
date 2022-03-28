@@ -12,6 +12,7 @@ import { SignOutLayoutComponent } from './navigation/sign-out-layout.component';
 import { ArtistLayoutComponent } from './middle_navigation/artist-layout.component';
 import { AlbumRouteComponent } from './album_route/album-route.component';
 import { SongRouteComponent } from './song_route/song-route.component';
+import { AddsongrouteComponent } from './song_route/addsongroute/addsongroute.component';
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -25,7 +26,8 @@ const routes:Routes = [
   {path: 'sign-out', component: SignOutLayoutComponent},
   {path: 'artist', component: ArtistLayoutComponent},
   {path: 'albums', component: AlbumRouteComponent},
-  {path: 'songs', component: SongRouteComponent}
+  {path: 'songs', component: SongRouteComponent},
+  {path: 'admin', component:AddsongrouteComponent}
 ];
 
 
