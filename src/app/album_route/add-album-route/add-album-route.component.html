@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm = "ngForm" (ngSubmit)="addAlbumRoute(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-tesxt">Image Path</span>
+                    <input type="text" class="form-control" ngModel name="img">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-tesxt">Artist</span>
+                    <input type="text" class="form-control" ngModel name="artist">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-tesxt">Explicit</span>
+                    <input type="text" class="form-control" ngModel name="explicit">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-tesxt">Title</span>
+                    <input type="text" class="form-control" ngModel name="title">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-tesxt">Number of Songs</span>
+                    <input type="text" class="form-control" ngModel name="songs">
+                </div>
+
+                <button class="btn btn-light" type="submit">
+                    Add Album
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

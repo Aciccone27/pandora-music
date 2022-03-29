@@ -13,6 +13,7 @@ import { ArtistLayoutComponent } from './middle_navigation/artist-layout.compone
 import { AlbumRouteComponent } from './album_route/album-route.component';
 import { SongRouteComponent } from './song_route/song-route.component';
 import { AddsongrouteComponent } from './song_route/addsongroute/addsongroute.component';
+import { AddAlbumRouteComponent } from './album_route/add-album-route/add-album-route.component';
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -27,7 +28,8 @@ const routes:Routes = [
   {path: 'artist', component: ArtistLayoutComponent},
   {path: 'albums', component: AlbumRouteComponent},
   {path: 'songs', component: SongRouteComponent},
-  {path: 'admin', component:AddsongrouteComponent}
+  {path: 'songRoute', component:AddsongrouteComponent},
+  {path: 'albumRoute', component:AddAlbumRouteComponent}
 ];
 
 

@@ -1,7 +1,7 @@
 **Changes made for Lab Assignmet #9 (Due 03/29/22)**
         *Main Features
                 *created new component to be able to insert new data into the website (addsongroute folder in the song_route folder)
-                *added routeing for the adsongroute in the app-routing.module.ts file (route path is admin)
+                *added routeing for the addsongroute in the app-routing.module.ts file (route path is songRoute)
                 *added to the html file (addsongroute.component.html) to include the following
                         --> image (img)
                         --> artist
@@ -10,7 +10,25 @@
                         --> add album button
                 *added method to addsongroute.component.ts 
                 *added ng model name for each of the attributes listed above in the addsongroute.component.html file
+                *Connected new component above to firebase to allow new items to be added by:
+                        -->adding new method (addsongroute) to the song_route.service.ts file in the song_route folder
+                        -->adding line at the end of addSongRoute method in the addsongroute.component.ts (addsongroute folder inside song_route folder)
+
         *Bonus
+                *Added more pictures in the assests to test out functionality
+                *created new component to be able to insert new data into the website (add-ablum-route folder in the album_route folder)
+                *added routeing for the addalbumroute in the app-routing.module.ts file (route path is albumRoute)
+                *added to the html file (add-album-route.component.html) to include the following
+                        -->artist
+                        -->explicit
+                        -->image (img)
+                        -->songs
+                        -->title
+                *added method to add-album-route.component.ts 
+                *added ng model name for each of the attributes listed above in the add-album-route.component.html file
+                *Connected new component above to firebase to allow new items to be added by:
+                        -->adding new method (addalbumroute) to the album_route.service.ts file in the song_route folder
+                        -->adding line at the end of addAlbumRoute method in the addsongroute.component.ts (add-albumroute folder inside album_route folder)
 
 
 

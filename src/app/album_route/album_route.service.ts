@@ -6,8 +6,8 @@ import { AlbumRouteItemModel } from "./album-route-item.model";
     providedIn: 'root'
 })
 export class AlbumRouteListService{
-    private baseUrl:string = "https://pandora-music-4d9c8-default-rtdb.firebaseio.com/";
-    private songEndpoint: string = "albumroutelist.json";
+    //private baseUrl:string = "https://pandora-music-4d9c8-default-rtdb.firebaseio.com/";
+    //private songEndpoint: string = "albumroutelist.json";
 
     constructor(private db: AngularFireDatabase){
 
@@ -18,5 +18,9 @@ export class AlbumRouteListService{
 
     public getAlbumroute(index:number){
       
+    }
+
+    addAlbumRoute(albumroute: AlbumRouteItemModel){
+        this.db.list<AlbumRouteItemModel>("albumroutelist").push(albumroute);
     }
 }

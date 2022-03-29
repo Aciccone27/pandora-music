@@ -20,4 +20,8 @@ export class SongRouteListService{
     public getSongRoute(index:number){
         //return this.http.get< SongRouteListItemModel>(this.baseUrl + 'songs' + '/' + index + '.json');
     }
+
+    addSongRoute(songroute: SongRouteListItemModel){
+        this.db.list<SongRouteListItemModel>("songroutelist").push(songroute);
+    }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SongRouteListItemModel } from '../song-route-item.model';
+import { SongRouteListService } from '../song_route.service';
 
 @Component({
   selector: 'pandora-addsongroute',
@@ -8,7 +9,7 @@ import { SongRouteListItemModel } from '../song-route-item.model';
 })
 export class AddsongrouteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private asr:SongRouteListService) { }
 
   ngOnInit(): void {
   }
@@ -16,6 +17,7 @@ export class AddsongrouteComponent implements OnInit {
   addSongRoute(song: SongRouteListItemModel ){
     console.log("You clicked add song");
     console.log(song);
+    this.asr.addSongRoute(song);
   }
 
 }
