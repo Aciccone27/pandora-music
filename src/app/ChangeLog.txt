@@ -1,3 +1,21 @@
+**Changes made for Lab assignment #10 (Due: 04/12/2022)
+        *Main festures
+                --> changed realtime data rules in firebase to require authentication
+                --> enabled email/password authentication in firebase
+                -->created ne auth/authentication component folder with following files
+                        *authentication.component.css/.html/.ts
+                -->added routing path in app-routin.module.ts file for the authentication component
+                -->created a location in the authentication html file for the input fields of email and password to be entered in the website
+                -->buttons were created and disabled as long as the form entered was not met (min password length)
+                -->created aithentication.service.ts file in the auth folder
+                -->created onSubmit method in authentication.component.ts file
+                        *method handeled data entered and any error recieved
+                -->Created authenticationResponse file in auth folder
+                --> made it to where it can be told which button has been clicked.
+
+        *Bonus
+                N/A
+
 **Changes made for Lab Assignmet #9 (Due 03/29/22)**
         *Main Features
                 *created new component to be able to insert new data into the website (addsongroute folder in the song_route folder)

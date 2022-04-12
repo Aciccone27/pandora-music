@@ -35,6 +35,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddsongrouteComponent } from './song_route/addsongroute/addsongroute.component';
 import { FormsModule } from '@angular/forms';
 import { AddAlbumRouteComponent } from './album_route/add-album-route/add-album-route.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { AddAlbumRouteComponent } from './album_route/add-album-route/add-album-
     AlistComponent,
     UserInfoComponent,
     AddsongrouteComponent,
-    AddAlbumRouteComponent
+    AddAlbumRouteComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
